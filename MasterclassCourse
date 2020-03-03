@@ -1,1 +1,9 @@
 
+// SECTION 3.21: Hello World Challenge and Common Errors//
+
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hej Kasia!");
+      
+    }
+}

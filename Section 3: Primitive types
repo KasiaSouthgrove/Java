@@ -1,0 +1,52 @@
+/* primitive types: boolean, byte (8 bits), char, short (16 bits), int (32 bits), long, float (=real numbers with decimal points, 32 bits), double (64 bits) // */
+
+
+package academy.learnprogramming;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int myInteger = 10;
+
+        int myMinIntValue = Integer.MIN_VALUE - 1;
+        int myMaxIntValue = Integer.MAX_VALUE + 1;
+        System.out.println("Integer Minimum Value = " + myMinIntValue);
+        System.out.println("Integer Maximum Value = " + myMaxIntValue);
+
+        byte myByte = 127;
+
+        short myShort = 32767;
+
+        long myLongValue = 10000000000000L;
+
+        long myMinLongValue = Long.MIN_VALUE;
+        long myMaxLongValue = Long.MAX_VALUE;
+        System.out.println("Long Minimum Value = " + myMinLongValue);
+        System.out.println("Long Maximum Value = " + myMaxLongValue);
+
+        float myMinFloatNumber = Float.MIN_VALUE;
+        float myMaxFloatNumber = Float.MIN_VALUE;
+        System.out.println("Float minimum value: " + myMinFloatNumber);
+        System.out.println("Float maximum value: " + myMaxFloatNumber);
+
+        double myMinDoubleNumber = Double.MIN_VALUE;
+        double myMaxDoubleNumber = Double.MIN_VALUE;
+        System.out.println("Double minimum value: " + myMinDoubleNumber);
+        System.out.println("Double maximum value: " + myMaxDoubleNumber);
+
+
+        // casting - converting a number from one type to another //
+
+        byte fromInteger = (byte) (myInteger);
+        System.out.println(fromInteger);
+
+        int myNewInteger = 12;
+        float myFloat = 12.25f; // preferred way of casting //
+        float my2Float = (float) 12.25;
+        double myDouble = 12.26;
+
+
+    }
+}
+

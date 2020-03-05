@@ -1,4 +1,5 @@
-/* primitive types: boolean, byte (8 bits), char, short (16 bits), int (32 bits), long, float (=real numbers with decimal points, 32 bits), double (64 bits) // */
+/* primitive types:
+ byte (8 bits), short (16 bits), int (32 bits), long (64 bits), float (=real numbers with decimal points, 32 bits), double (64 bits), char, boolean */
 
 
 package academy.learnprogramming;
@@ -7,23 +8,25 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int myInteger = 10;
-
-        int myMinIntValue = Integer.MIN_VALUE - 1;
-        int myMaxIntValue = Integer.MAX_VALUE + 1;
-        System.out.println("Integer Minimum Value = " + myMinIntValue);
-        System.out.println("Integer Maximum Value = " + myMaxIntValue);
-
         byte myByte = 127;
 
         short myShort = 32767;
 
-        long myLongValue = 10000000000000L;
+        int myInteger = 2147483647;
 
-        long myMinLongValue = Long.MIN_VALUE;
+        long myLongValue = 9223372036854775807L;
+
+        // checking the minimum and maximum values //
+
+        int myMinIntValue = Integer.MIN_VALUE - 1; // turns into max value //
+        // why is Integer above? //
+        System.out.println("Integer Minimum Value = " + myMinIntValue);
+
         long myMaxLongValue = Long.MAX_VALUE;
-        System.out.println("Long Minimum Value = " + myMinLongValue);
         System.out.println("Long Maximum Value = " + myMaxLongValue);
+        long the_New_Long = 777_777_777_777_7777L; // why the longer numbers don't work? //
+
+        // floats & doubles; floats are doubles by default //
 
         float myMinFloatNumber = Float.MIN_VALUE;
         float myMaxFloatNumber = Float.MIN_VALUE;
@@ -35,18 +38,40 @@ public class Main {
         System.out.println("Double minimum value: " + myMinDoubleNumber);
         System.out.println("Double maximum value: " + myMaxDoubleNumber);
 
+        float theNewFloat = 5f / 3;
+        double theNewDouble = 7.0 / 3;
+        System.out.println(theNewFloat);
+        System.out.println(theNewDouble);
 
         // casting - converting a number from one type to another //
 
-        byte fromInteger = (byte) (myInteger);
-        System.out.println(fromInteger);
+        int myNewInteger = 10;
+        byte castedInteger = (byte) (myNewInteger - 2);
+        System.out.println("The byte casted is " + castedInteger);
 
-        int myNewInteger = 12;
-        float myFloat = 12.25f; // preferred way of casting //
+
         float my2Float = (float) 12.25;
+        float myFloat = 12.25f; // preferred way of casting//
         double myDouble = 12.26;
 
+        // how to check the type of a value? //
 
     }
 }
 
+// primitive types challenge //
+
+package academy.learnprogramming;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double pounds = 4;
+        double kilograms = pounds * 0.45359237;
+        System.out.println("The pounds converted into kilograms is: " + kilograms);
+    }
+}
+
+
+// BigDecimal class for precise calculations with decimal points //

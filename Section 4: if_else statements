@@ -1,0 +1,16 @@
+package academy.learnprogramming;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        boolean weatherIsGood = false;
+
+        if(weatherIsGood) {
+            System.out.println("Go for a walk!");
+        }
+        else
+            System.out.println("The weather sucks, stay in!");
+
+    }
+}

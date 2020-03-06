@@ -1,0 +1,33 @@
+package academy.learnprogramming;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double myDouble = 20.00;
+
+        double mySecondDouble = 80.00;
+
+        double myThirdDouble = (myDouble + mySecondDouble * 100);
+
+        double myFourthDouble = myThirdDouble % 40.00;
+
+        if (myFourthDouble == 0) {
+            System.out.println("The remainder is equal to 0!");
+        }
+        if (myFourthDouble != 0) {
+            System.out.println("The remainder is  not equal to 0!");
+
+        }
+
+        boolean myTernary = (myFourthDouble == 0) ? true : false; // how do I do ternaries here? //
+        if (myTernary == true) {
+            System.out.println("The remainder is equal to 0!");
+        }
+        if (myTernary == false) {
+        }
+        System.out.println("The remainder is not equal to 0!");
+        }
+
+
+    }

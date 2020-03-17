@@ -1,0 +1,64 @@
+package academy.learnprogramming;                                                                                 
+                                                                                                                  
+public class Main {                                                                                               
+                                                                                                                  
+    public static void main(String[] args) {                                                                      
+                                                                                                                  
+      int score = 1500;                                                                                           
+      String name = "Peter";                                                                                      
+      int playerScore = score;                                                                                    
+                                                                                                                  
+      displayHighScorePosition (name, score);                                                                     
+                                                                                                                  
+      calculateHighScorePosition(playerScore);                                                                    
+                                                                                                                  
+      score = 900;                                                                                                
+      name = "Tom";                                                                                               
+      playerScore = score;                                                                                        
+                                                                                                                  
+      displayHighScorePosition (name, score);                                                                     
+                                                                                                                  
+      calculateHighScorePosition(playerScore);                                                                    
+                                                                                                                  
+      score = 400;                                                                                                
+      name = "Mat";                                                                                               
+      playerScore = score;                                                                                        
+                                                                                                                  
+      displayHighScorePosition (name, score);                                                                     
+                                                                                                                  
+      calculateHighScorePosition(playerScore);                                                                    
+                                                                                                                  
+       score = 50;                                                                                                
+       name = "Bran";                                                                                             
+       playerScore = score;                                                                                       
+                                                                                                                  
+       displayHighScorePosition (name, score);                                                                    
+                                                                                                                  
+       calculateHighScorePosition(playerScore);                                                                   
+                                                                                                                  
+                                                                                                                  
+    }                                                                                                             
+                                                                                                                  
+                                                                                                                  
+                                                                                                                  
+    public static void displayHighScorePosition (String name, int score){                                         
+                                                                                                                  
+    System.out.println(name + " managed to get into position " + score + " on the high score table.");            
+                                                                                                                  
+    }                                                                                                             
+                                                                                                                  
+    public static int calculateHighScorePosition(int playerScore) {                                               
+                                                                                                                  
+        if (playerScore >=1000) {                                                                                 
+            System.out.println("1");}                                                                             
+        else if (playerScore >=500) {                                                                             
+            System.out.println("2");}                                                                             
+        else if (playerScore >= 100) {                                                                            
+            System.out.println("3");}                                                                             
+        else System.out.println("4");                                                                             
+                                                                                                                  
+        return -1;                                                                                                
+                                                                                                                  
+     }                                                                                                            
+}                                                                                                                 
+                                                                                                                  
